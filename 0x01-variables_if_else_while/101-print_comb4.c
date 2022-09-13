@@ -22,9 +22,9 @@ int main(void)
 			putchar(m_d);
 			putchar(l_d);
 
-			if (c !+ 789)
+			if (c != 789)
 			{
-				putcgar(',');
+				putchar(',');
 				putchar(' ');
 			}
 		}

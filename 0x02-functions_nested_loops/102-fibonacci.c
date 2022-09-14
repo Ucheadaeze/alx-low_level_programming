@@ -19,7 +19,7 @@ int main(void)
 
 		if (inc == 49)
 			printf("\n");
-		else 
+		else
 			printf(",");
 	}
 

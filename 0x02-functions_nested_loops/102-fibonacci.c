@@ -6,21 +6,20 @@
  */
 int main(void)
 {
-	int inc;
-	unsigned long n1 = 0, n2 = 1, n3;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	for (inc = 0; inc < 50; inc++)
+	for (count = 0; count < 50; count++)
 	{
-		n3 = n1 + n2;
-		printf("%lu", n3);
+		sum = fib1 + fib2;
+		printf("%lu", sum);
+		fib1 = fib2;
+		fib2 = sum;
 
-		n1 = n2;
-		n2 = n3;
-
-		if (inc == 49)
+		if (count == 49)
 			printf("\n");
 		else
-			printf(",");
+			printf(", ");
 	}
 
 	return (0);

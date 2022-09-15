@@ -14,7 +14,7 @@ int main(void)
 
 	while (inc++ < number / 2)
 	{
-		if number % inc == 0)
+	if (number % inc == 0)
 	{
 		number /= 2;
 		continue;

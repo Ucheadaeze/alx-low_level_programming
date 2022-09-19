@@ -1,1 +1,1 @@
-Write a function that prints half of a string, followed by a new line
+Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers

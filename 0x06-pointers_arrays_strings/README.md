@@ -1,1 +1,1 @@
-Write a function that prints an integer
+A dream doesnt become reality through magic it takes sweat, determination and hard work

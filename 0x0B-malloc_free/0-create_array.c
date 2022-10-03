@@ -1,4 +1,4 @@
-#incude "main.h"
+#include "main.h"
 
 /**
  * create_array - creates an array of charts, and
@@ -20,6 +20,7 @@ char *create_array(unsigned int size, char c)
 
 	if (array == NULL)
 		return (NULL);
+
 	for (index = 0; index < size; index++)
 		aray[index] = c;
 

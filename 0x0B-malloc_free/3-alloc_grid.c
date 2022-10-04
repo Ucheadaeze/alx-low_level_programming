@@ -11,6 +11,7 @@
 
 int **alloc_grid(int width, int height)
 {
+/*Declaring variables*/
 	int **array;
 	int i = 0, j;
 

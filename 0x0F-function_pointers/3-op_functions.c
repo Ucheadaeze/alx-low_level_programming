@@ -1,7 +1,7 @@
 #include "3-calc.h"
 
 /**
- * op-add - calculates the sum of two integers
+ * op_add - calculates the sum of two integers
  * @a: first integer
  * @b: second integer
  *
@@ -53,7 +53,7 @@ int op_div(int a, int b)
  * @a: first integer
  * @b: second integer
  *
- * Return: remainder of a divided of b
+ * Return: remainder of a divided b
  */
 int op_mod(int a, int b)
 {

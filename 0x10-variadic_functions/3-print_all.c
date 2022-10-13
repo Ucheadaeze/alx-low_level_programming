@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_all - prints anything
+ * print_all - prints anything.
  * @format: a list of types of arguments passed to the function.
  *
  * Return: no return.
@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 			if (!str)
 			{
 				printf("(nil)");
-break;
+        			break;
 			}
 			printf("%s", str);
 			break;

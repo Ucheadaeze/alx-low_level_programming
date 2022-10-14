@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
+/**
  * print_all - prints anything.
  * @format: list of all arguments passed to the function.
  *

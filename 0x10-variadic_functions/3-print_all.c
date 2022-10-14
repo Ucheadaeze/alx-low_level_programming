@@ -69,7 +69,7 @@ void print_all(const char * const format, ...)
 	va_list valist;
 	char *separator = "";
 
-	va_start (valist, format);
+	va_start(valist, format);
 	i = 0;
 	while (format && format[i])
 	{

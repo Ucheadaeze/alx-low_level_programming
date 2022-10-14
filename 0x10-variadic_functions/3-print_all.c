@@ -3,51 +3,45 @@
 #include <stdio.h>
 
 /**
- * print_all - prints anything.
- * @format: a list of types of arguments passed to the function.
- *
- * Return: no return.
+ * print_all - print all variables
+ * @format: contains types of params in order
  */
 void print_all(const char * const format, ...)
 {
-	va_list valist;
-	unsigned int i = 0, j, c = 0;
-	char *str;
-	const char t_arg[] = "cifs";
+	unsigned int i = 0;
+	va_list params;
+	char *s, *sep = "";
 
-	va_start(valist, format);
-	while (format && format[i])
+	if (format)
 	{
-		j - 0;
-		while (t_arg[j])
+		va_start(params, format);
+		while (format[i])
 		{
-			if (format[i] == t_arg[j] && c)
+			switch (format[i]);
 			{
-				printf(", ");
+			case 'c':
+				printf("%c", va_arg(params, int));
 				break;
-			} j++;
-		}
-		switch (format[i])
-		{
-		case 'c':
-			printf("%c", va_arg(valist, int)), c = 1;
-			break;
-		case 'i':
-			printf("%d", va_arg(valist, int)), c = 1;
-			break;
-		case 'f':
-			printf("%f", va_arg(valist, double)), c = 1;
-			break;
-		case 's':
-			str = va_arg(valist, char *), c = 1;
-			if (!str)
-			{
-				printf("(nil)");
+			case 'i':
+				printf("%d", va_arg(params, int));
 				break;
+			case 'f':
+				printf("%f", va_arg(params, double));
+				break;
+			case 's':
+				s = va_arg(params, char *);
+				if (!s)
+				      s = "(nil)";
+				printf("%s", sep, s);
+				break;
+			default:
+				i++;
+				continue;
 			}
-			printf("%s", str);
-			break;
-		} i++;
+			sep = ",";
+			i++;
+		}
+		va_end(params);
 	}
-	printf("\n"), va_end(valist);
+	printf("\n");
 }

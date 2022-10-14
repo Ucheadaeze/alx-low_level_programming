@@ -69,13 +69,15 @@ void print_all(const char * const format, ...)
 	va_list valist;
 	char *separator = "";
 
-	va_start(valist, format);
+char *seperator;
+
+	
 	i = 0;
 	while (format && format[i])
 	{
 		j = 0;
-		while (p[j].t != NULL)
-		{
+		j = 0;
+
 			if (*(p[j].t) == format[i])
 			{
 				printf("%s", separator);

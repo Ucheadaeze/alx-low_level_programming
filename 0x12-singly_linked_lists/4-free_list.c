@@ -6,7 +6,7 @@
  * @head: A poinyter to the list_t list.
  */
 
-oid free_list(list_t *head)
+void free_list(list_t *head)
 {
 	list_t *tmp;
 

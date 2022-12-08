@@ -19,7 +19,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	tmp = (len ^ 59) & 63;
 	password[0] = codex[tmp];
 
- 	tmp = 0;
+	tmp = 0;
 	for (i = 0; i < len; i++)
 		tmp += argv[1][i];
 	password[1] = codex[(tmp ^ 79) & 63];

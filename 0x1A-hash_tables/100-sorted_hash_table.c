@@ -1,8 +1,3 @@
-/*
- * File: 100-sorted_hash_table.c
- * Auth: Brennan D Baraban
- */
-
 #include "hash_tables.h"
 
 shash_table_t *shash_table_create(unsigned long int size);
@@ -162,7 +157,6 @@ void shash_table_print(const shash_table_t *ht)
 	if (ht == NULL)
 		return;
 
-
 	node = ht->shead;
 	printf("{");
 	while (node != NULL)
@@ -197,6 +191,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 	}
 	printf("}\n");
 }
+
 /**
  * shash_table_delete - Deletes a sorted hash table.
  * @ht: A pointer to the sorted hash table.

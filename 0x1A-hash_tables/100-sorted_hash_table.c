@@ -1,4 +1,4 @@
-#include "hash_tables.h"
+"include "hash_tables.h"
 
 shash_table_t *shash_table_create(unsigned long int size);
 int shash_table_set(shash_table_t *ht, const char *key, const char *value);
@@ -207,7 +207,7 @@ void shash_table_delete(shash_table_t *ht)
 	node = ht->shead;
 	while (node)
 	{
-		tmp = node->snext;
+		tmp = node->snet;
 		free(node->key);
 		free(node->value);
 		free(node);
